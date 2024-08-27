@@ -44,6 +44,10 @@ exec --no-startup-id nm-applet
 # Start picom - composite manager for better visual experience
 exec --no-startup-id picom
 
+# Enable natural scroll
+exec --no-startup-id xinput set-prop 10 "libinput Natural Scrolling Enabled" 1
+exec --no-startup-id xinput set-prop 14 "libinput Natural Scrolling Enabled" 1
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
