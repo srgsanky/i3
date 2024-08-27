@@ -190,6 +190,18 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# Exit i3 without using mouse
+# https://unix.stackexchange.com/questions/483934/how-can-i-exit-i3-without-using-a-mouse
+mode "exit: [l]ogout, [r]eboot, [s]hutdown" {
+  bindsym l exec i3-msg exit
+  bindsym r exec systemctl reboot
+  bindsym s exec systemctl shutdown
+  bindsym Escape mode "default"
+  bindsym Return mode "default"
+}
+
+bindsym $mod+x mode "exit: [l]ogout, [r]eboot, [s]hutdown"
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
