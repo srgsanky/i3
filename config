@@ -9,6 +9,9 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
+# Use exec to run a command on startup.
+# Use exec_always to run the command even when the configuration is refreshed.
+
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
