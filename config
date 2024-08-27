@@ -84,6 +84,10 @@ bindsym $mod+d exec rofi -show-icons -sidebar-mode -show drun -theme gruvbox-dar
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
+# Disable focus wrapping
+# https://i3wm.org/docs/userguide.html#_focus_wrapping
+focus_wrapping no
+
 # change focus
 # Use Vim based direction keys instead of jkl;
 bindsym $mod+h focus left
