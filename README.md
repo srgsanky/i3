@@ -3,7 +3,7 @@
 ## Install i3wm
 
 ```bash
-sudo apt install -y i3 rofi picom
+sudo apt install -y i3 rofi picom polybar
 ```
 
 Logout and pick i3wm at the login prompt.
