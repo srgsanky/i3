@@ -17,7 +17,7 @@ set $mod Mod4
 # font pango:monospace 8
 
 # Use nerd font
-font xft:Hack Nerd Font, FontAwesome 10
+font xft:Hack Nerd Font, FontAwesome 12
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
