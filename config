@@ -220,8 +220,8 @@ bindsym $mod+r mode "resize"
 # https://unix.stackexchange.com/questions/483934/how-can-i-exit-i3-without-using-a-mouse
 mode "exit: [l]ogout, [r]eboot, [s]hutdown" {
   bindsym l exec i3-msg exit
-  bindsym r exec systemctl reboot
-  bindsym s exec systemctl shutdown
+  bindsym r exec shutdown -r now
+  bindsym s exec shutdown now
   bindsym Escape mode "default"
   bindsym Return mode "default"
 }
