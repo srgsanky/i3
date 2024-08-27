@@ -66,6 +66,9 @@ bindsym $mod+Shift+q kill
 # drun is desktop entry mode - launch apps based on .desktop files
 # window: switch between open windows
 # run: Launch app based on command
+#
+# You can switch between mods using ctrl+tab
+# https://www.reddit.com/r/qtools/comments/m2dfvn/can_rofi_jump_to_a_desired_switch_using_a_keybard/
 bindsym $mod+d exec rofi -show-icons -sidebar-mode -show drun -theme gruvbox-dark
 
 # A more modern dmenu replacement is rofi:
