@@ -231,3 +231,14 @@ exec_always --no-startup-id ~/.config/i3/polybar/launch.sh
 # Configure key repetition delay.
 # Taken from https://jaketrent.com/post/adjust-keyboard-repeat-rate-i3/
 exec --no-startup-id xset r rate 200 35
+
+
+# App specific config
+#
+# run "xprop | grep WM_CLASS" and click on the application of interest to find the class
+#
+# The one downside is that this does not run automatically when a new window is opened. You have to
+# reload the i3 config manually.
+for_window [class="^org.wezfurlong.wezterm$"] move container to workspace 1
+for_window [class="^Google-chrome$"] move container to workspace 2
+for_window [class="^firefox$"] move container to workspace 2
