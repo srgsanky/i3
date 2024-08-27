@@ -188,3 +188,7 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+# Configure key repetition delay.
+# Taken from https://jaketrent.com/post/adjust-keyboard-repeat-rate-i3/
+exec --no-startup-id xset r rate 200 35
