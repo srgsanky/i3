@@ -59,8 +59,14 @@ bindsym $mod+Return exec --no-startup-id flatpak run org.wezfurlong.wezterm
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run
+# bindsym $mod+d exec --no-startup-id dmenu_run
+
+# Use rofi
+# Theme list https://github.com/davatorium/rofi/tree/next/themes
+bindsym $mod+d exec rofi -show-icons -sidebar-mode -show drun -theme gruvbox-dark
+
 # A more modern dmenu replacement is rofi:
+# 40 is F2 on most keyboards
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.

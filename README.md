@@ -3,7 +3,7 @@
 ## Install i3wm
 
 ```bash
-sudo apt install -y i3
+sudo apt install -y i3 rofi
 ```
 
 Logout and pick i3wm at the login prompt.
