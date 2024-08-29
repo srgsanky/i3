@@ -240,8 +240,9 @@ exec_always --no-startup-id ~/.config/i3/polybar/launch.sh
 # Taken from https://jaketrent.com/post/adjust-keyboard-repeat-rate-i3/
 exec --no-startup-id xset r rate 200 35
 
-# Always pick in-built display as the primary monitor on refresh
-exec_always --no-startup-id xrandr --output eDP-1 --auto --primary
+# Always pick in-built display as the primary monitor on refresh. This will also turn off all
+# external monitors by default.
+exec_always --no-startup-id ~/.config/i3/reconfigure-monitors.sh
 
 # App specific config
 #
